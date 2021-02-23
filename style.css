@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Pacifico&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;  
 }
 html {
     font-family: 'Lato', sans-serif;
@@ -29,33 +26,61 @@ html {
     text-shadow: 1px 1px #1a040e;
     box-shadow: 1px 1px #1a040e;
     }
-body {
-    margin: 0 auto;
 }
+body{
+    color: white;
+    background: #633158;
+}
+
 .cuerpo{
-    font-size: 2rem;
-    letter-spacing: normal;
+    width: 700px;
     position: absolute;
     top: 50%;
-    left: 33%;
-    margin: -25px 0 0 -25px;
-    
+    left: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
 }
-p {
-    font-size: 1rem;
+.date{
+    position: relative;
+    margin: 40px 0;
 }
-#fecha {
+label{
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    padding: 0 10px;
+    background-color:#633158;
+    transition: top .2s ease-in-out, font-size .2s ease-in-out;
+}
+.active{
+    top: -25px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+input[type=text]{
+    width: 100%;
+    padding: 20px;
+    border: 2px solid white;
+    font-size: 20px; 
+    font-weight: 800;
+    background-color:#633158;
+    color: white;
+}
+input [type=text]:focus{
+    outline: none;
+}
+fecha { //sin uso
     width: 100%;
     padding: 10px 5px 10px;
     margin: 8px 0px;
-    box-sizing: border-box;
-    background-color: #1a040e;
     color: #f3e1ef;
     outline: none;
     border-radius: 15px;
     border-width: 0px;
 }
-.boton {
+boton { //sin uso
     background-color: #633158;
     border: none;
     color: white;
